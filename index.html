@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Give me Your brief introduction ?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Hi, my name is Kanak Sethi. I hold a Master’s degree in Applied Mathematics from NIT Surat and
+                        I’m currently working as
+                        a Software Developer at Tata Elxsi with 1.9 years of experience in backend development,
+                        distributed systems, and cloud
+                        infrastructure.
+                        Over the past few years, I’ve worked extensively on scalable, production-grade systems,
+                        particularly in the areas of
+                        AI-based video analysis and healthcare SaaS platforms, with a focus on performance optimization,
+                        asynchronous
+                        processing, and fault-tolerant architectures.
+                        <br />
+                        💡 Key Projects
+                        <br />
+                        🔍 AI-Based Live Stream Analysis System
+                        In this project, I designed and implemented a CI/CD-driven, real-time content analysis system
+                        that detects alcohol
+                        consumption, smoking, and abusive behavior in live video streams.
+                        * We consumed live streams, chunked them into smaller segments, and processed each chunk through
+                        multiple AI models.
+                        * I built a Celery + RabbitMQ based pipeline for efficient task distribution and concurrency.
+                        * We used MongoDB for metadata, MinIO for chunk storage, and integrated observability and
+                        alerting into the pipeline to
+                        ensure low latency and high reliability.
+                        <br />
+                        🏥 Healthcare Management System (SaaS-Based)
+                        In this project, I led the backend development of a SaaS-based healthcare platform, focusing on
+                        modular,
+                        microservice-driven architecture.
+                        * I developed services for user management, subscription handling, payment integration (Stripe),
+                        notifications, and
+                        ticketing.
+                        * The system supported multi-tenant deployments and was built using FastAPI, PostgreSQL,
+                        RabbitMQ, Celery, and
+                        S3-compatible object storage.
+                        * I also set up CI/CD pipelines using Jenkins and Docker, and deployed the system on Kubernetes
+                        for scalability and
+                        resilience.
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Why are you looking to change your current job?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        I’ve had a great experience at Tata Elxsi working on high-impact backend systems, but I’m now
+                        looking for a role that
+                        provides more opportunities for technical growth and broader ownership. I want to work in an
+                        environment where I can
+                        build and scale systems that impact millions of users and challenge me to think beyond just code
+                        — including
+                        architectural decision-making, system design at scale, and leadership responsibilities.
+                        What excites me about Amazon is its strong engineering culture, fast-paced innovation, and the
+                        way it empowers engineers
+                        to take end-to-end ownership. I’m looking for that next step where I can grow into a more
+                        impactful role and contribute
+                        to building resilient, customer-first platforms. Amazon feels like the right place to take that
+                        leap.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Tell me about a time when you took ownership of a problem outside your area of responsibility.
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Situation:
+                        <br />
+                        * During the Healthcare Management System project, a new teammate joined the team.<br />
+                        * He was responsible for writing tests for API endpoints, but struggled with both the
+                        business
+                        logic and Pytest usage.<br />
+                        * This began to slow down the testing phase, risking our sprint delivery.<br />
+                        <br />
+                        🎯 Task:
+                        <br />
+                        * Although I wasn’t assigned to mentor or onboard him, I recognized that helping him would
+                        benefit both project velocity
+                        and team collaboration.<br />
+                        * I took the initiative to ensure he could contribute effectively.<br />
+                        <br />
+                        🛠️ Action:
+                        <br />
+                        * Scheduled a couple of 1-on-1 sessions to explain key service logic and testing
+                        approaches.<br />
+                        * Walked him through how to write clean and modular tests using Pytest.<br />
+                        * Pair-programmed with him on a few test cases to build confidence.<br />
+                        * Created a short internal guide summarizing common testing patterns and tools we use.<br />
+                        <br />
+                        ✅ Result:
+                        <br />
+                        * Within a few days, he was independently writing tests and meeting sprint expectations.<br />
+                        * Test coverage and velocity improved, leading to better release confidence.<br />
+                        * The experience strengthened team trust and set a positive tone for future collaboration.<br />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Give an example where you had to regain a teammate’s or stakeholder’s trust.
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:
+                        <br />
+                        * I was responsible for setting up the task distribution pipeline using Celery and
+                        RabbitMQ.<br />
+                        * Initially, I routed all chunk-processing tasks to a single Celery worker for simplicity,
+                        assuming low load during
+                        early testing.<br />
+                        🎯 Task:<br />
+                        * As we began testing with real-time live streams, latency increased drastically.<br />
+                        * Detection results were delayed, and the AI team raised concerns, questioning the reliability
+                        of the architecture.<br />
+                        * This impacted their trust in my technical decisions.<br />
+                        🛠️ Action:<br />
+                        * Took full ownership of the issue and began investigation.<br />
+                        * Identified the root cause: task overload on a single worker.<br />
+                        * Re-architected the system to use multi-worker processing and RabbitMQ queue balancing.<br />
+                        * Tuned Celery's prefetch count and enabled parallel task handling.<br />
+                        * Ran comparative performance tests: single-worker vs. multi-worker setups.<br />
+                        * Documented the fix and shared performance metrics with the team.<br />
+                        ✅ Result:<br />
+                        * Latency dropped by over 60%, restoring real-time performance.<br />
+                        * The AI team acknowledged the improvement and trust was fully regained.<br />
+                        * I was later invited to contribute to performance optimization discussions across other
+                        services.<br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Tell me about a time when you were asked to do something you had never done before. How did you
+                        handle it?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * I was asked to handle the Stripe payment integration for the Healthcare Management
+                        System.<br />
+                        * The scope included subscription upgrades, downgrades, and billing notifications.<br />
+                        * I had no prior experience with payment gateway integration.<br />
+                        🎯 Task:<br />
+                        * My responsibility was to integrate Stripe into our backend smoothly, ensure reliable billing,
+                        and deliver a
+                        frictionless user experience for subscription management.<br />
+                        🛠️ Action:<br />
+                        * Studied Stripe’s official documentation and explored their sandbox environment for hands-on
+                        learning.<br />
+                        * Broke the integration into manageable parts: plan creation, customer setup, and session
+                        handling.<br />
+                        * Coordinated with the frontend team to align payment flows across the UI and backend.<br />
+                        * Built proper error handling and fallback flows for cases like failed transactions and plan
+                        switches.<br />
+                        ✅ Result:<br />
+                        * Successfully completed the Stripe integration and released it to production.<br />
+                        * The system automated billing operations and improved the user experience during plan
+                        changes.<br />
+                        * I gained strong confidence in working with third-party services and became the go-to person
+                        for payment integration
+                        features.<br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Tell me about a time you delivered results under tough circumstances without compromising
+                        quality.
+                        OR
+                        ❓ Tell me about a time you had tight deadlines.
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * During the Healthcare Management System development, we faced a tight client deadline to
+                        deliver critical modules —
+                        subscription, notification, and payment services.<br />
+                        * Midway through the sprint, our DevOps engineer went on emergency leave, leaving a major gap in
+                        CI/CD and deployment
+                        setup.<br />
+                        🎯 Task:<br />
+                        * Ensure the successful and timely delivery of all core modules.<br />
+                        * Take over DevOps responsibilities and ensure production readiness without compromising
+                        reliability or performance.<br />
+                        🛠️ Action:<br />
+                        * Took full ownership of CI/CD setup and DevOps responsibilities.<br />
+                        * Configured Docker environments and integrated pipelines using GitHub Actions.<br />
+                        * Set up Kubernetes-based deployments for automated and consistent releases.<br />
+                        * Worked closely with the QA and backend teams to identify and remove blockers.<br />
+                        ✅ Result:<br />
+                        * All modules were successfully deployed on time with no critical issues.<br />
+                        * The client praised the smooth and reliable delivery, even under pressure.<br />
+                        * This experience highlighted my ability to stay composed, prioritize effectively, and deliver
+                        high-quality results
+                        under tight deadlines.<br />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Describe a time when you proactively fixed a recurring issue that no one had claimed
+                        responsibility for.
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * In the Healthcare Management System, we relied solely on email for sending reminders and
+                        updates to patients.<br />
+                        * Over time, users frequently missed critical emails (e.g., subscription renewals, ticket
+                        status), leading to repeated
+                        support queries and delayed user action.<br />
+                        * The issue persisted, but no one was actively addressing it.<br />
+                        🎯 Task:<br />
+                        * Though it wasn’t assigned to me, I saw this as a recurring issue affecting both user
+                        experience and support workload.<br />
+                        * I took it upon myself to fix it by creating a more visible and reliable communication
+                        channel.<br />
+                        🛠️ Action:<br />
+                        * Proposed and took full ownership of building an in-app notification system to complement email
+                        alerts.<br />
+                        * Integrated the system with key modules like subscription and ticketing using RabbitMQ.<br />
+                        * Used PostgreSQL to persist messages.<br />
+                        * Collaborated with the frontend team to display real-time notifications in the UI.<br />
+                        ✅ Result:<br />
+                        * Users started getting important alerts inside the application, which led to faster user
+                        responses.<br />
+                        * Support tickets related to missed emails dropped significantly.<br />
+                        * The notification service was adopted by other internal products, and I became the go-to person
+                        for messaging and
+                        notification systems.<br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Have you ever worked with someone difficult or skeptical? How did you earn their trust?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * While working on the AI-based live stream analysis system, I noticed that batching video
+                        chunks before processing was
+                        causing high latency.<br />
+                        * I suggested processing chunks individually to reduce response time and improve real-time
+                        performance.<br />
+                        * A senior AI team member disagreed, believing this would negatively impact GPU efficiency and
+                        model accuracy.<br />
+
+                        🎯 Task:<br />
+                        * My goal was to reduce system latency without compromising model accuracy or performance.<br />
+                        * I also needed to earn the trust of the skeptical senior engineer by validating the impact of
+                        the proposed change.<br />
+
+                        🛠️ Action:<br />
+                        * Instead of arguing, I took a collaborative and data-driven approach:<br />
+                        * Listened to his concerns and acknowledged the trade-offs.<br />
+                        * Proposed a test-based comparison of batched vs. non-batched processing.<br />
+                        * Created a test environment and collected metrics on:<br />
+                        * Latency<br />
+                        * Throughput<br />
+                        * Detection accuracy<br />
+                        * Presented the results clearly to the team.<br />
+                        * Suggested a limited rollout to observe real-world impact without full commitment.<br />
+
+                        ✅ Result:<br />
+                        * The test showed that:<br />
+                        * Accuracy remained stable<br />
+                        * Latency improved by ~60%<br />
+                        * The senior engineer agreed to adopt the new approach.<br />
+                        * Our professional relationship improved, and I was later involved in wider performance
+                        optimization efforts across the
+                        system.<br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Tell me about a time when someone doubted your idea. How did you convince them and take
+                        ownership of the result?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * In the early phase of the Healthcare Management System project, all internal services
+                        (billing, email, notifications)
+                        communicated via synchronous REST APIs.<br />
+                        * I proposed shifting to asynchronous messaging using RabbitMQ for non-critical downstream
+                        services.<br />
+                        * Some senior engineers were skeptical, worrying about added complexity and possible message
+                        queue failure scenarios.<br />
+
+                        🎯 Task:<br />
+                        * My goal was to prove that asynchronous messaging would:<br />
+                        * Improve latency<br />
+                        * Increase fault tolerance<br />
+                        * Decouple tightly integrated services<br />
+                        * I also committed to owning the implementation if approved.<br />
+
+                        🛠️ Action:<br />
+                        * Developed a proof of concept comparing REST vs. RabbitMQ under simulated high load.<br />
+                        * Demonstrated how REST-based chaining:<br />
+                        * Increased latency<br />
+                        * Blocked user responses<br />
+                        * Reduced system resilience<br />
+                        * Showed that RabbitMQ allowed:<br />
+                        * Instant responses<br />
+                        * Graceful handling of downstream service failures<br />
+                        * Durability and retries, making the system more fault-tolerant<br />
+                        * Presented trade-offs and shared metrics with the team.<br />
+                        * After approval, I owned the complete RabbitMQ integration and rollout.<br />
+
+                        ✅ Result:<br />
+                        * The team adopted the queue-based model, and the new architecture was implemented
+                        successfully.<br />
+                        * The system experienced:<br />
+                        * Faster response times<br />
+                        * Reduced cascading failures<br />
+                        * I became the go-to person for messaging design and async communication patterns in
+                        future
+                        projects.<br />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Tell me about a time you had to make a quick decision with limited data.
+                        Project: AI-Based Live Stream Analysis System Leadership Principles: Bias for Action, Are Right
+                        A Lot, Deliver Results
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * During a live event test run of the AI-based Live Stream Analysis System, the system started
+                        showing increased latency
+                        in real-time detection.<br />
+                        * This issue risked breaking SLAs (Service Level Agreement) and delayed critical detections like
+                        smoking or abusive
+                        behavior, which were required to be near real-time.<br />
+
+                        🎯 Task:<br />
+                        * I needed to restore low-latency performance immediately, without a full root cause
+                        analysis.<br />
+                        * There wasn’t enough time to experiment with deep optimizations or model reconfiguration.<br />
+
+                        🛠️ Action:<br />
+                        * With limited time, I evaluated two options:<br />
+                        * Scale up Celery workers to handle more chunks in parallel.<br />
+                        * Reduce batch size and re-tune model processing (which would take longer to test).<br />
+                        * I quickly chose to scale up Celery workers as a short-term emergency fix to absorb the
+                        load.<br />
+                        * Monitored metrics in real-time to ensure the system stabilized and latencies dropped.<br />
+
+                        ✅ Result:<br />
+                        * The system recovered quickly, restoring real-time performance during the event.<br />
+                        * Later, I implemented batch-size optimization as a permanent solution.<br />
+                        * This experience showed that making decisive short-term trade-offs can protect system
+                        reliability while giving space
+                        for long-term fixes.<br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        Tell me about a time you took a risk.
+                        Project: Subscription Service (Distributed System) Leadership Principles: Bias for Action,
+                        Ownership, Are Right A Lot
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * Our Subscription Service initially used synchronous REST APIs for internal communication
+                        between services like email,
+                        and notifications.<br />
+                        * This led to slow response times, tight coupling, and poor fault tolerance.<br />
+                        * I identified this as a long-term risk for scalability and reliability.<br />
+
+                        🎯 Task:<br />
+                        * I proposed a shift to asynchronous communication using RabbitMQ.<br />
+                        * The change was seen as risky due to:<br />
+                        * Architectural overhaul<br />
+                        * Added complexity in handling queues, retries, and message failures<br />
+                        * Uncertainty around operational impact<br />
+
+                        🛠️ Action:<br />
+                        * Built a proof of concept comparing REST vs. RabbitMQ under simulated load.<br />
+                        * Collected data on:<br />
+                        * Latency improvements<br />
+                        * Fault isolation<br />
+                        * System resilience<br />
+                        * Presented the technical benefits and risk mitigation strategy to the team.<br />
+                        * Took full ownership of:<br />
+                        * Designing the messaging layer<br />
+                        * Gradually integrating RabbitMQ into non-critical flows (notifications, email)<br />
+                        * Ensuring fallback and retry mechanisms were robust<br />
+
+                        ✅ Result:<br />
+                        * The new architecture:<br />
+                        * Reduced user-facing latency significantly<br />
+                        * Improved fault tolerance by decoupling services<br />
+                        * The risk paid off and the async model was later adopted for critical flows as well.<br />
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        Tell me about a time you failed to meet a commitment.
+                        Project: Healthcare Management System Leadership Principles: Ownership, Earn Trust, Learn and Be
+                        Curious
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        🧩 Situation:<br />
+                        * During the Healthcare Management System project, I committed to delivering the notification
+                        module within a sprint.<br />
+                        * However, I underestimated the complexity of integrating multiple triggers from services like
+                        subscription, ticketing,
+                        and payment.<br />
+
+                        🎯 Task:<br />
+                        * My responsibility was to deliver a working, production-ready notification system by the end of
+                        the sprint.<br />
+                        * This included event consumption, formatting messages, and exposing a notification API for
+                        frontend integration.<br />
+
+                        🛠️ Action:<br />
+                        * As the sprint progressed, I realized:<br />
+                        * Setting up reliable event routing via RabbitMQ was more involved than expected.<br />
+                        * I also needed more time to handle edge cases like retries and failed message delivery.<br />
+                        * I immediately:<br />
+                        * Informed the team and stakeholders about the delay early.<br />
+                        * Proposed a phased delivery, prioritizing subscription-related events first.<br />
+                        * Extended documentation and clearly communicated the new timeline.<br />
+                        * Used the extra time to ensure modularity, so adding other event types later was
+                        seamless.<br />
+
+                        ✅ Result:<br />
+                        * While I missed the original sprint deadline, the partial rollout worked reliably.<br />
+                        * The full module was completed in the next sprint, with high reliability.<br />
+                        * Stakeholders appreciated the transparency, and I learned the importance of:<br />
+                        * Better estimation when working with distributed systems<br />
+                        * Communicating risks early to avoid surprises<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
